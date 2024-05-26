@@ -5,13 +5,13 @@
 # [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 # [“Russia”, “Denmark”, “Kazan”] → []
 
-from random import randint
+from random import randint ## импортировал метод randint из модуля random
 
-txt = input().split() 
+txt = input().split()  ## ввод переменно, дл удобсвта пользователя, достаточно бездумно бить по клавиатуры, иногда нажимая пробелы, ввод всё-ровно разорбьёт всё по элементам списков  
 
-res = []
+res = [] # создал переменую с результатом
 
-for i in range(randint(0, len(txt))):
-    res.append(txt[randint(0, len(txt))][0:randint(0, 3)])
+for i in range(randint(0, len(txt))): # условие цикла "для i в диапалоне от случайного числа от 0 до длинны количества элементов в txt" 
+    res.append(txt[randint(0, len(txt))][0:randint(0, 3)]) # основной цикл  "заполни список res первыми от 0 3х элементами из txt"
 
-print(res)
+print(res) # вывод

@@ -11,7 +11,7 @@ txt = input().split()
 
 res = []
 
-for i in range(randint(0,3)):
-    res.append(txt[randint(0, len(txt))])
+for i in range(randint(0, len(txt))):
+    res.append(txt[randint(0, len(txt))][0:randint(0, 3)])
 
 print(res)
